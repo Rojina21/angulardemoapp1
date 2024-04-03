@@ -1,0 +1,19 @@
+
+<div>
+    <form [formGroup]="loginForm" (ngSubmit)="login()">
+      <h1>Login Page in {{title}}!</h1>  
+
+      <div class="form-control">
+        <label for="username">Username</label>
+        <input formControlName="username" id="username" type="username" placeholder="Username" required>
+      </div>
+
+      <div class="form-control">
+        <label for="password">Enter Password: </label>
+        <input formControlName="password" id="password" type="password" placeholder="Password" required>
+      </div>
+
+      <button type="submit">Login</button>
+
+    </form>
+  </div>
